@@ -10,7 +10,7 @@
     "iconUrl": "https://mintgenie.app/icon.png",
     "splashImageUrl": "https://mintgenie.app/splash.png",
     "splashBackgroundColor": "#0a1929",
-    "homeUrl": "https://mintgenie.app",
-    "webhookUrl": "https://api.mintgenie.app/webhook"
+    "homeUrl": "https://app-3755873f-9asl.vercel.app",
+    "webhookUrl": "https://app-3755873f-9asl.vercel.app/api/webhook"
   }
 }
