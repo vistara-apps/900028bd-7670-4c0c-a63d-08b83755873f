@@ -1,10 +1,15 @@
 import type { Metadata } from 'next'
+import { Providers } from './components/Providers'
 import './globals.css'
-import { ThemeProvider } from './components/ThemeProvider'
 
 export const metadata: Metadata = {
-  title: 'Base Mini App',
-  description: 'Built with Zara',
+  title: 'MintGenie - Social NFT Minting',
+  description: 'Social, gasless NFT minting with reputation gates and referral boosts',
+  openGraph: {
+    title: 'MintGenie',
+    description: 'Social, gasless NFT minting with reputation gates and referral boosts',
+    images: ['/og-image.png'],
+  },
 }
 
 export default function RootLayout({
@@ -14,10 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <ThemeProvider defaultTheme="coinbase">
-          {children}
-        </ThemeProvider>
+      <body className="gradient-bg min-h-screen">
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
